@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Expert pediatric dental advice, tips, and insights from Dr. Vruushali Patil. Evidence-based articles on children's oral health, preventive care, and dental treatments.">
+    <meta name="keywords"
+        content="pediatric dentistry blog, children dental care, oral health tips, dental advice, preventive dentistry, sedation dentistry, orthodontics kids">
+    <meta name="author" content="Dr. Vruushali Patil - TinyTeeth Pediatric Dental Clinic">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563EB">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TinyTeeth Blog - Expert Pediatric Dental Insights">
+    <meta property="og:description"
+        content="Professional pediatric dental advice and tips from Dr. Vruushali Patil. Evidence-based articles on children's oral health and dental care.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tinyteeth.com/blog">
+    <meta property="og:image" content="https://tinyteeth.com/images/blog-hero.jpg">
+
+    <title>Expert Pediatric Dental Blog | TinyTeeth Clinic | Dr. Vruushali Patil</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#EFF6FF',
+                            100: '#DBEAFE',
+                            200: '#BFDBFE',
+                            300: '#93C5FD',
+                            400: '#60A5FA',
+                            500: '#3B82F6',
+                            600: '#2563EB',
+                            700: '#1D4ED8',
+                            800: '#1E40AF',
+                            900: '#1E3A8A',
+                        },
+                        'secondary': {
+                            50: '#F0FDF4',
+                            100: '#DCFCE7',
+                            200: '#BBF7D0',
+                            300: '#86EFAC',
+                            400: '#4ADE80',
+                            500: '#22C55E',
+                            600: '#16A34A',
+                            700: '#15803D',
+                            800: '#166534',
+                            900: '#14532D',
+                        },
+                        'accent': {
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            200: '#FDE68A',
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                            800: '#92400E',
+                            900: '#78350F',
+                        },
+                        'coral': {
+                            50: '#FFF5F5',
+                            100: '#FED7D7',
+                            200: '#FEB2B2',
+                            300: '#FC8181',
+                            400: '#F56565',
+                            500: '#E53E3E',
+                            600: '#C53030',
+                            700: '#9B2C2C',
+                            800: '#822727',
+                            900: '#63171B',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'slideInLeft': 'slideInLeft 0.8s ease-out',
+                        'slideInRight': 'slideInRight 0.8s ease-out',
+                        'fadeInUp': 'fadeInUp 0.8s ease-out',
+                        'scaleIn': 'scaleIn 0.6s ease-out',
+                        'rotateIn': 'rotateIn 0.8s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        },
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                        shimmer: {
+                            '0%': { 'background-position': '-200px 0' },
+                            '100%': { 'background-position': 'calc(200px + 100%) 0' },
+                        },
+                        slideInLeft: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        slideInRight: {
+                            '0%': { transform: 'translateX(100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        fadeInUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        rotateIn: {
+                            '0%': { transform: 'rotate(-180deg) scale(0.8)', opacity: '0' },
+                            '100%': { transform: 'rotate(0deg) scale(1)', opacity: '1' }
+                        }
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+                        'glass-inset': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
+                        'premium': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                        'premium-lg': '0 35px 60px -12px rgba(0, 0, 0, 0.3)',
+                        'neon': '0 0 20px rgba(37, 99, 235, 0.5)',
+                        'neon-hover': '0 0 30px rgba(37, 99, 235, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Enhanced Icon Sizes */
+        .icon-sm {
+            width: 24px;
+            height: 24px;
+            font-size: 14px;
+        }
+
+        .icon-md {
+            width: 48px;
+            height: 48px;
+            font-size: 24px;
+        }
+
+        .icon-lg {
+            width: 64px;
+            height: 64px;
+            font-size: 32px;
+        }
+
+        .icon-xl {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+        }
+
+        /* Enhanced Text Sizes */
+        .text-body {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .text-caption {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .text-small {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Advanced Glass Morphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-strong {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(37, 99, 235, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Enhanced Gradient Backgrounds */
+        .gradient-primary {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+        }
+
+        .gradient-secondary {
+            background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+        }
+
+        .gradient-accent {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+        }
+
+        .gradient-coral {
+            background: linear-gradient(135deg, #FC8181 0%, #E53E3E 100%);
+        }
+
+        .gradient-hero {
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 25%, #EFF6FF 50%, #DBEAFE 75%, #FEF3C7 100%);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Enhanced Button Styles */
+        .btn-primary {
+            background: linear-gradient(45deg, #3B82F6, #2563EB);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(45deg, #22C55E, #16A34A);
+            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-accent {
+            background: linear-gradient(45deg, #F59E0B, #D97706);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary:hover,
+        .btn-secondary:hover,
+        .btn-accent:hover {
+            transform: translateY(-3px) scale(1.02);
+        }
+
+        /* Enhanced Card Styles */
+        .card-premium {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(37, 99, 235, 0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-premium:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+
+        /* Enhanced Typography */
+        .text-gradient-primary {
+            background: linear-gradient(45deg, #3B82F6, #2563EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-secondary {
+            background: linear-gradient(45deg, #22C55E, #16A34A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-accent {
+            background: linear-gradient(45deg, #F59E0B, #D97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Enhanced Form Styles */
+        .form-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            transition: all 0.4s ease;
+            color: #1f2937;
+        }
+
+        .form-glass:focus {
+            background: rgba(255, 255, 255, 0.98);
+            border-color: rgba(37, 99, 235, 0.4);
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.3);
+            transform: scale(1.02);
+        }
+
+        /* Enhanced Navigation */
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Professional Badge Styles */
+        .badge-primary {
+            background: linear-gradient(45deg, #3B82F6, #2563EB);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            animation: pulse-slow 4s infinite;
+        }
+
+        /* Enhanced Hover Effects */
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Neon Effects */
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .neon-glow:hover {
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.8);
+        }
+
+        /* Blog Specific Styles */
+        .blog-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-content {
+            line-height: 1.8;
+        }
+
+        .blog-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            color: #1e3a8a;
+        }
+
+        .blog-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem 0;
+            color: #2563eb;
+        }
+
+        .blog-content p {
+            margin-bottom: 1rem;
+        }
+
+        .blog-content ul,
+        .blog-content ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Enhanced Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+
+            .section-padding {
+                padding: 3rem 0;
+            }
+
+            .text-5xl {
+                font-size: 2.5rem;
+            }
+
+            .text-4xl {
+                font-size: 2rem;
+            }
+
+            .text-3xl {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Search Enhancement */
+        .search-highlight {
+            background: linear-gradient(45deg, #FEF3C7, #FDE68A);
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.25rem;
+        }
+
+        /* Category Pills */
+        .category-pill {
+            transition: all 0.3s ease;
+        }
+
+        .category-pill:hover {
+            transform: scale(1.05);
+        }
+
+        /* Reading Progress Bar */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(45deg, #3B82F6, #2563EB);
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-gray-50 text-gray-900 overflow-x-hidden">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Enhanced Navigation -->
+    <nav class="nav-glass fixed top-0 w-full z-50 py-4 px-6 transition-all duration-300" id="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4" data-aos="fade-right">
+                <div
+                    class="icon-md gradient-primary rounded-full flex items-center justify-center text-white font-bold shadow-lg floating-element">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-playfair font-bold text-gradient-primary">TinyTeeth</h1>
+                    <p class="text-small text-gray-600 font-medium">Pediatric Dental Excellence</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8" data-aos="fade-left">
+                <a href="#home"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Home</a>
+                <a href="#about"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">About</a>
+                <a href="#services"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Services</a>
+                <a href="#specialties"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Specialties</a>
+                <a href="#blog"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105"
+                    onclick="openBlogPage()">Blog</a>
+                <a href="#contact"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Contact</a>
+                <button class="btn-primary text-white px-6 py-3 rounded-full font-semibold text-body neon-glow"
+                    onclick="scrollToBooking()">
+                    <i class="fas fa-calendar-check mr-2"></i>Book Consultation
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden text-2xl text-gray-700 transition-transform duration-300 hover:scale-110"
+                id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden glass rounded-2xl mt-4 p-6 animate-fadeInUp" id="mobileMenu">
+            <div class="flex flex-col space-y-4">
+                <a href="#home"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">Home</a>
+                <a href="#about"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">About</a>
+                <a href="#services"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">Services</a>
+                <a href="#specialties"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">Specialties</a>
+                <a href="#blog"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2"
+                    onclick="openBlogPage()">Blog</a>
+                <a href="#contact"
+                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">Contact</a>
+                <button class="btn-primary text-white px-6 py-3 rounded-full font-semibold w-full mt-4 text-body"
+                    onclick="scrollToBooking()">
+                    <i class="fas fa-calendar-check mr-2"></i>Book Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section class="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+        style="background-image: linear-gradient(rgba(248, 250, 252, 0.9), rgba(241, 245, 249, 0.9)), url('https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center;">
+
+        <!-- Floating Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-10 w-20 h-20 bg-primary-200 rounded-full opacity-20 floating-element">
+            </div>
+            <div class="absolute top-40 right-20 w-16 h-16 bg-secondary-200 rounded-full opacity-20 floating-element"
+                style="animation-delay: -2s;"></div>
+            <div class="absolute bottom-40 left-20 w-24 h-24 bg-accent-200 rounded-full opacity-20 floating-element"
+                style="animation-delay: -4s;"></div>
+            <div class="absolute bottom-20 right-10 w-12 h-12 bg-coral-200 rounded-full opacity-20 floating-element"
+                style="animation-delay: -1s;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Professional Badge -->
+                <div class="inline-flex items-center badge-primary mb-6" data-aos="fade-up">
+                    <i class="fas fa-blog mr-2 icon-sm"></i>
+                    Expert Pediatric Dental Insights
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-5xl lg:text-7xl font-playfair font-bold mb-6 text-primary-dark leading-tight"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <span class="block animate-slideInLeft">Professional</span>
+                    <span class="text-gradient-primary animate-slideInRight">Dental Blog</span>
+                </h1>
+
+                <!-- Enhanced Subheading -->
+                <div class="text-xl lg:text-2xl mb-8 text-gray-700 font-medium" data-aos="fade-up" data-aos-delay="200">
+                    <p class="mb-3">Evidence-Based Pediatric Dental Care Insights</p>
+                    <p class="text-lg lg:text-xl text-gray-600">Expert advice, research updates, and practical tips for
+                        optimal children's oral health</p>
+                    <p class="text-base lg:text-lg text-primary-600 font-semibold mt-2">✨ Trusted by 2000+ Families ✨
+                    </p>
+                </div>
+
+                <!-- Enhanced Search Bar -->
+                <div class="max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-strong rounded-2xl p-2 flex items-center">
+                        <div class="flex-1 flex items-center">
+                            <i class="fas fa-search text-gray-400 ml-4 mr-3"></i>
+                            <input type="text" id="blogSearch" placeholder="Search articles, topics, or keywords..."
+                                class="flex-1 bg-transparent outline-none text-gray-700 placeholder-gray-500">
+                        </div>
+                        <button class="btn-primary px-6 py-3 rounded-xl font-semibold text-white"
+                            onclick="performSearch()">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Enhanced Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="glass rounded-xl p-4 hover-lift">
+                        <div class="text-2xl font-bold text-primary-600">50+</div>
+                        <div class="text-caption text-gray-600">Expert Articles</div>
+                    </div>
+                    <div class="glass rounded-xl p-4 hover-lift">
+                        <div class="text-2xl font-bold text-secondary-600">15K+</div>
+                        <div class="text-caption text-gray-600">Monthly Readers</div>
+                    </div>
+                    <div class="glass rounded-xl p-4 hover-lift">
+                        <div class="text-2xl font-bold text-accent-600">12</div>
+                        <div class="text-caption text-gray-600">Categories</div>
+                    </div>
+                    <div class="glass rounded-xl p-4 hover-lift">
+                        <div class="text-2xl font-bold text-coral-600">Weekly</div>
+                        <div class="text-caption text-gray-600">New Content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section id="featured" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center badge-primary mb-4">
+                    <i class="fas fa-star mr-2 icon-sm"></i>
+                    Featured Content
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-playfair font-bold mb-6 text-primary-dark">
+                    Latest <span class="text-gradient-primary">Expert Insights</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto text-body">
+                    Stay updated with the latest research, treatment advances, and professional recommendations in
+                    pediatric dentistry
+                </p>
+            </div>
+
+            <!-- Featured Article Grid -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Main Featured Article -->
+                <div class="lg:col-span-2 blog-card card-premium rounded-3xl overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="h-64 bg-cover bg-center relative"
+                        style="background-image: url('https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1');">
+                        <div class="h-full bg-primary-600 bg-opacity-80 flex items-center justify-center">
+                            <div
+                                class="icon-xl bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white floating-element">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-white bg-opacity-20 text-white text-xs px-3 py-1 rounded-full">8 min
+                                read</span>
+                        </div>
+                    </div>
+                    <div class="p-8" id="mainFeaturedArticle">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-primary-100 text-primary-800 text-small px-3 py-1 rounded-full">Preventive
+                                Care</span>
+                            <span class="text-gray-500 text-small">December 20, 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-playfair font-bold text-primary-dark mb-4">
+                            Revolutionary Approaches to Early Childhood Caries Prevention: Evidence-Based Strategies for
+                            2025
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-body leading-relaxed">
+                            Discover the latest breakthrough research in preventing early childhood caries. This
+                            comprehensive guide covers innovative fluoride applications, dietary interventions, and
+                            behavioral modification techniques that have shown remarkable success rates in clinical
+                            trials. Learn how to implement these evidence-based strategies in your child's daily
+                            routine.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div
+                                    class="icon-md gradient-primary rounded-full flex items-center justify-center text-white text-lg">
+                                    VP
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-primary-dark">Dr. Vruushali Patil</div>
+                                    <div class="text-caption text-gray-600">MDS Pediatric Dentistry</div>
+                                </div>
+                            </div>
+                            <button class="btn-primary px-6 py-3 rounded-xl font-semibold text-white"
+                                onclick="openBlogPost('early-childhood-caries-2025')">
+                                Read Full Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Featured Articles -->
+                <div class="space-y-6">
+                    <!-- Featured Article 2 -->
+                    <div class="blog-card card-premium rounded-2xl overflow-hidden" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="h-32 bg-cover bg-center relative"
+                            style="background-image: url('https://images.pexels.com/photos/6812589/pexels-photo-6812589.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=1');">
+                            <div class="h-full bg-secondary-600 bg-opacity-80 flex items-center justify-center">
+                                <div
+                                    class="icon-lg bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 left-2">
+                                <span class="bg-secondary-500 text-white text-xs px-2 py-1 rounded-full">Trending</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <span
+                                    class="bg-secondary-100 text-secondary-800 text-xs px-2 py-1 rounded-full">Sedation</span>
+                                <span class="text-gray-500 text-xs">Dec 18, 2024</span>
+                            </div>
+                            <h4 class="text-lg font-playfair font-bold text-primary-dark mb-2">
+                                Advanced Pediatric Sedation Protocols: Safety First Approach
+                            </h4>
+                            <p class="text-gray-600 text-caption mb-3">
+                                Comprehensive overview of modern sedation techniques, safety protocols, and patient
+                                selection criteria for pediatric dental procedures.
+                            </p>
+                            <button class="text-secondary-600 hover:text-secondary-700 font-semibold text-caption"
+                                onclick="openBlogPost('sedation-protocols-2024')">
+                                Read More →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Featured Article 3 -->
+                    <div class="blog-card card-premium rounded-2xl overflow-hidden" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="h-32 bg-cover bg-center relative"
+                            style="background-image: url('https://images.pexels.com/photos/6812585/pexels-photo-6812585.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=1');">
+                            <div class="h-full bg-accent-600 bg-opacity-80 flex items-center justify-center">
+                                <div
+                                    class="icon-lg bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white">
+                                    <i class="fas fa-smile"></i>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 left-2">
+                                <span class="bg-accent-500 text-white text-xs px-2 py-1 rounded-full">Popular</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <span
+                                    class="bg-accent-100 text-accent-800 text-xs px-2 py-1 rounded-full">Orthodontics</span>
+                                <span class="text-gray-500 text-xs">Dec 15, 2024</span>
+                            </div>
+                            <h4 class="text-lg font-playfair font-bold text-primary-dark mb-2">
+                                Early Orthodontic Intervention: When and Why It Matters
+                            </h4>
+                            <p class="text-gray-600 text-caption mb-3">
+                                Expert guidance on identifying early orthodontic issues and the benefits of timely
+                                intervention for optimal facial development.
+                            </p>
+                            <button class="text-accent-600 hover:text-accent-700 font-semibold text-caption"
+                                onclick="openBlogPost('early-orthodontics-2024')">
+                                Read More →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center badge-primary mb-4">
+                    <i class="fas fa-th-large mr-2 icon-sm"></i>
+                    Browse by Category
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-playfair font-bold mb-6 text-primary-dark">
+                    Explore <span class="text-gradient-primary">Expert Topics</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto text-body">
+                    Comprehensive coverage of pediatric dental topics, from basic care to advanced treatments
+                </p>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Category 1 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="100" onclick="filterByCategory('preventive')">
+                    <div
+                        class="icon-lg gradient-primary rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Preventive Care</h3>
+                    <p class="text-caption text-gray-600 mb-3">Essential tips for maintaining optimal oral health</p>
+                    <span class="text-primary-600 text-caption font-semibold">18 Articles</span>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="200" onclick="filterByCategory('treatment')">
+                    <div
+                        class="icon-lg gradient-secondary rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Treatment Options</h3>
+                    <p class="text-caption text-gray-600 mb-3">Advanced procedures and treatment modalities</p>
+                    <span class="text-secondary-600 text-caption font-semibold">15 Articles</span>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="300" onclick="filterByCategory('nutrition')">
+                    <div
+                        class="icon-lg gradient-accent rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Nutrition & Diet</h3>
+                    <p class="text-caption text-gray-600 mb-3">Foods that promote healthy teeth and gums</p>
+                    <span class="text-accent-600 text-caption font-semibold">12 Articles</span>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="400" onclick="filterByCategory('behavioral')">
+                    <div
+                        class="icon-lg gradient-coral rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Behavioral Management</h3>
+                    <p class="text-caption text-gray-600 mb-3">Helping children overcome dental anxiety</p>
+                    <span class="text-coral-600 text-caption font-semibold">10 Articles</span>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="500" onclick="filterByCategory('orthodontics')">
+                    <div
+                        class="icon-lg gradient-primary rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Orthodontics</h3>
+                    <p class="text-caption text-gray-600 mb-3">Early intervention and alignment solutions</p>
+                    <span class="text-primary-600 text-caption font-semibold">14 Articles</span>
+                </div>
+
+                <!-- Category 6 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="600" onclick="filterByCategory('emergency')">
+                    <div
+                        class="icon-lg gradient-secondary rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Emergency Care</h3>
+                    <p class="text-caption text-gray-600 mb-3">Immediate response to dental emergencies</p>
+                    <span class="text-secondary-600 text-caption font-semibold">8 Articles</span>
+                </div>
+
+                <!-- Category 7 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="700" onclick="filterByCategory('special-needs')">
+                    <div
+                        class="icon-lg gradient-accent rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Special Needs</h3>
+                    <p class="text-caption text-gray-600 mb-3">Specialized care for children with unique needs</p>
+                    <span class="text-accent-600 text-caption font-semibold">9 Articles</span>
+                </div>
+
+                <!-- Category 8 -->
+                <div class="category-pill card-premium rounded-2xl p-6 text-center hover-lift cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="800" onclick="filterByCategory('research')">
+                    <div
+                        class="icon-lg gradient-coral rounded-full flex items-center justify-center text-white mx-auto mb-4 neon-glow">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="font-bold text-primary-dark mb-2 text-body">Latest Research</h3>
+                    <p class="text-caption text-gray-600 mb-3">Cutting-edge studies and clinical findings</p>
+                    <span class="text-coral-600 text-caption font-semibold">11 Articles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section id="recent" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2">
+                    <!-- Section Header -->
+                    <div class="mb-12" data-aos="fade-up">
+                        <div class="inline-flex items-center badge-primary mb-4">
+                            <i class="fas fa-clock mr-2 icon-sm"></i>
+                            Recent Publications
+                        </div>
+                        <h2 class="text-4xl font-playfair font-bold mb-4 text-primary-dark">
+                            Latest <span class="text-gradient-primary">Articles</span>
+                        </h2>
+                        <p class="text-gray-600 text-body">Stay updated with our most recent expert insights and
+                            research findings</p>
+                    </div>
+
+                    <!-- Blog Posts List -->
+                    <div class="space-y-8" id="blogPostsList">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-card card-premium rounded-2xl overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <div class="md:flex">
+                                <div class="md:w-1/3 h-48 md:h-auto bg-cover bg-center relative"
+                                    style="background-image: url('https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1');">
+                                    <div class="h-full bg-primary-600 bg-opacity-70 flex items-center justify-center">
+                                        <div
+                                            class="icon-lg bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white">
+                                            <i class="fas fa-baby"></i>
+                                        </div>
+                                    </div>
+                                    <div class="absolute top-2 left-2">
+                                        <span
+                                            class="bg-primary-500 text-white text-xs px-2 py-1 rounded-full">New</span>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-6">
+                                    <div class="flex items-center space-x-2 mb-3">
+                                        <span
+                                            class="bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full">Infant
+                                            Care</span>
+                                        <span class="text-gray-500 text-xs">December 22, 2024</span>
+                                        <span class="text-gray-500 text-xs">• 6 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-playfair font-bold text-primary-dark mb-3">
+                                        First Dental Visit: Complete Guide for Parents of Infants
+                                    </h3>
+                                    <p class="text-gray-600 text-body mb-4">
+                                        Everything you need to know about your baby's first dental visit, including what
+                                        to expect, how to prepare, and why early dental care is crucial for long-term
+                                        oral health. Expert recommendations from pediatric dental specialists.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="icon-sm gradient-primary rounded-full flex items-center justify-center text-white text-xs">
+                                                VP</div>
+                                            <span class="text-caption text-gray-600">Dr. Vruushali Patil</span>
+                                        </div>
+                                        <button
+                                            class="text-primary-600 hover:text-primary-700 font-semibold text-caption"
+                                            onclick="openBlogPost('first-dental-visit-guide')">
+                                            Read More →
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 2 -->
+                        <article class="blog-card card-premium rounded-2xl overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="md:flex">
+                                <div class="md:w-1/3 h-48 md:h-auto bg-cover bg-center relative"
+                                    style="background-image: url('https://images.pexels.com/photos/6812589/pexels-photo-6812589.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1');">
+                                    <div class="h-full bg-secondary-600 bg-opacity-70 flex items-center justify-center">
+                                        <div
+                                            class="icon-lg bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white">
+                                            <i class="fas fa-gamepad"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-6">
+                                    <div class="flex items-center space-x-2 mb-3">
+                                        <span
+                                            class="bg-secondary-100 text-secondary-800 text-xs px-2 py-1 rounded-full">Behavioral</span>
+                                        <span class="text-gray-500 text-xs">December 20, 2024</span>
+                                        <span class="text-gray-500 text-xs">• 8 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-playfair font-bold text-primary-dark mb-3">
+                                        Making Dental Visits Fun: Innovative Techniques for Anxious Children
+                                    </h3>
+                                    <p class="text-gray-600 text-body mb-4">
+                                        Discover proven strategies to transform dental anxiety into excitement. Learn
+                                        about play therapy, distraction techniques, and modern technology that makes
+                                        dental visits enjoyable for children of all ages.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="icon-sm gradient-secondary rounded-full flex items-center justify-center text-white text-xs">
+                                                VP</div>
+                                            <span class="text-caption text-gray-600">Dr. Vruushali Patil</span>
+                                        </div>
+                                        <button
+                                            class="text-secondary-600 hover:text-secondary-700 font-semibold text-caption"
+                                            onclick="openBlogPost('dental-visits-fun')">
+                                            Read More →
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 3 -->
+                        <article class="blog-card card-premium rounded-2xl overflow-hidden" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <div class="md:flex">
+                                <div class="md:w-1/3 h-48 md:h-auto bg-cover bg-center relative"
+                                    style="background-image: url('https://images.pexels.com/photos/6812585/pexels-photo-6812585.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1');">
+                                    <div class="h-full bg-accent-600 bg-opacity-70 flex items-center justify-center">
+                                        <div
+                                            class="icon-lg bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white">
+                                            <i class="fas fa-apple-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-6">
+                                    <div class="flex items-center space-x-2 mb-3">
+                                        <span
+                                            class="bg-accent-100 text-accent-800 text-xs px-2 py-1 rounded-full">Nutrition</span>
+                                        <span class="text-gray-500 text-xs">December 18, 2024</span>
+                                        <span class="text-gray-500 text-xs">• 7 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-playfair font-bold text-primary-dark mb-3">
+                                        Tooth-Friendly Foods: Building Strong Teeth Through Nutrition
+                                    </h3>
+                                    <p class="text-gray-600 text-body mb-4">
+                                        Comprehensive guide to foods that strengthen teeth and promote oral health.
+                                        Learn about calcium-rich options, vitamin D sources, and foods to avoid for
+                                        optimal dental development in children.
+                                    </p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="icon-sm gradient-accent rounded-full flex items-center justify-center text-white text-xs">
+                                                VP</div>
+                                            <span class="text-caption text-gray-600">Dr. Vruushali Patil</span>
+                                        </div>
+                                        <button class="text-accent-600 hover:text-accent-700 font-semibold text-caption"
+                                            onclick="openBlogPost('tooth-friendly-foods')">
+                                            Read More →
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Load More Button -->
+                        <div class="text-center pt-8" data-aos="fade-up">
+                            <button class="btn-primary px-8 py-4 rounded-xl font-semibold text-white"
+                                onclick="loadMorePosts()">
+                                <i class="fas fa-plus mr-2"></i>Load More Articles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-24 space-y-8">
+                        <!-- About Author -->
+                        <div class="card-premium rounded-2xl p-6" data-aos="fade-up">
+                            <h3 class="text-xl font-playfair font-bold text-primary-dark mb-4">About the Author</h3>
+                            <div class="text-center mb-4">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow-lg">
+                                    <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1"
+                                        alt="Dr. Vruushali Patil" class="w-full h-full object-cover">
+                                </div>
+                                <h4 class="font-bold text-primary-dark">Dr. Vruushali Patil</h4>
+                                <p class="text-caption text-gray-600 mb-3">MDS Pediatric Dentistry</p>
+                                <p class="text-caption text-gray-700 leading-relaxed">
+                                    15+ years of specialized experience in pediatric dentistry. Expert in sedation
+                                    dentistry, behavioral management, and advanced pediatric treatments.
+                                </p>
+                            </div>
+                            <button class="btn-primary w-full py-3 rounded-xl font-semibold text-white"
+                                onclick="scrollToBooking()">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Consultation
+                            </button>
+                        </div>
+
+                        <!-- Popular Posts -->
+                        <div class="card-premium rounded-2xl p-6" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-xl font-playfair font-bold text-primary-dark mb-4">Popular Articles</h3>
+                            <div class="space-y-4">
+                                <div class="flex space-x-3 hover-lift cursor-pointer"
+                                    onclick="openBlogPost('teething-guide')">
+                                    <div
+                                        class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600">
+                                        <i class="fas fa-baby"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-primary-dark text-caption mb-1">Complete Teething
+                                            Guide for Parents</h4>
+                                        <p class="text-xs text-gray-600">Dec 15, 2024 • 5 min read</p>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-3 hover-lift cursor-pointer"
+                                    onclick="openBlogPost('fluoride-facts')">
+                                    <div
+                                        class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center text-secondary-600">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-primary-dark text-caption mb-1">Fluoride Facts:
+                                            Safety and Benefits</h4>
+                                        <p class="text-xs text-gray-600">Dec 12, 2024 • 6 min read</p>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-3 hover-lift cursor-pointer"
+                                    onclick="openBlogPost('thumb-sucking')">
+                                    <div
+                                        class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center text-accent-600">
+                                        <i class="fas fa-hand-paper"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-primary-dark text-caption mb-1">Breaking the Thumb
+                                            Sucking Habit</h4>
+                                        <p class="text-xs text-gray-600">Dec 10, 2024 • 4 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter Signup -->
+                        <div class="card-premium rounded-2xl p-6" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="text-xl font-playfair font-bold text-primary-dark mb-4">Stay Updated</h3>
+                            <p class="text-caption text-gray-600 mb-4">
+                                Get the latest pediatric dental insights delivered to your inbox monthly.
+                            </p>
+                            <div class="space-y-3">
+                                <input type="email" placeholder="Your email address" id="sidebarEmail"
+                                    class="form-glass w-full px-4 py-3 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none">
+                                <button class="btn-secondary w-full py-3 rounded-xl font-semibold text-white"
+                                    onclick="subscribeNewsletter('sidebar')">
+                                    <i class="fas fa-envelope mr-2"></i>Subscribe Now
+                                </button>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-3 text-center">
+                                <i class="fas fa-lock mr-1"></i>No spam, unsubscribe anytime
+                            </p>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="card-premium rounded-2xl p-6" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="text-xl font-playfair font-bold text-primary-dark mb-4">Quick Links</h3>
+                            <div class="space-y-2">
+                                <a href="index.html"
+                                    class="block text-gray-600 hover:text-primary-600 transition-colors text-caption py-1">
+                                    <i class="fas fa-home mr-2 w-4"></i>Home
+                                </a>
+                                <a href="index.html#about"
+                                    class="block text-gray-600 hover:text-primary-600 transition-colors text-caption py-1">
+                                    <i class="fas fa-user-md mr-2 w-4"></i>About Dr. Vruushali
+                                </a>
+                                <a href="index.html#services"
+                                    class="block text-gray-600 hover:text-primary-600 transition-colors text-caption py-1">
+                                    <i class="fas fa-tooth mr-2 w-4"></i>Services
+                                </a>
+                                <a href="index.html#contact"
+                                    class="block text-gray-600 hover:text-primary-600 transition-colors text-caption py-1">
+                                    <i class="fas fa-calendar-check mr-2 w-4"></i>Book Appointment
+                                </a>
+                                <a href="#"
+                                    class="block text-gray-600 hover:text-primary-600 transition-colors text-caption py-1"
+                                    onclick="openWhatsApp()">
+                                    <i class="fab fa-whatsapp mr-2 w-4"></i>WhatsApp Chat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="glass-strong rounded-3xl p-8 lg:p-12 text-center" data-aos="fade-up">
+                    <div
+                        class="icon-xl gradient-primary rounded-full flex items-center justify-center text-white mx-auto mb-6 neon-glow floating-element">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-playfair font-bold text-primary-dark mb-4">
+                        Stay Informed with <span class="text-gradient-primary">Expert Insights</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Join 5,000+ parents who receive our monthly newsletter with the latest pediatric dental
+                        research, tips, and expert advice from Dr. Vruushali Patil.
+                    </p>
+
+                    <!-- Newsletter Benefits -->
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="text-center">
+                            <div
+                                class="icon-md bg-primary-100 rounded-full flex items-center justify-center text-primary-600 mx-auto mb-3">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h4 class="font-semibold text-primary-dark mb-2">Latest Research</h4>
+                            <p class="text-caption text-gray-600">Evidence-based insights and clinical findings</p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="icon-md bg-secondary-100 rounded-full flex items-center justify-center text-secondary-600 mx-auto mb-3">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 class="font-semibold text-primary-dark mb-2">Expert Tips</h4>
+                            <p class="text-caption text-gray-600">Practical advice for daily oral care</p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="icon-md bg-accent-100 rounded-full flex items-center justify-center text-accent-600 mx-auto mb-3">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h4 class="font-semibold text-primary-dark mb-2">Monthly Updates</h4>
+                            <p class="text-caption text-gray-600">Regular content delivered to your inbox</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Form -->
+                    <div class="max-w-md mx-auto">
+                        <div class="flex gap-4 mb-4">
+                            <input type="email" placeholder="Enter your email address" id="newsletterMainEmail"
+                                class="form-glass flex-1 px-4 py-3 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none">
+                            <button class="btn-primary px-6 py-3 rounded-xl font-semibold text-white"
+                                onclick="subscribeNewsletter('main')">
+                                Subscribe
+                            </button>
+                        </div>
+                        <p class="text-caption text-gray-600">
+                            <i class="fas fa-shield-alt mr-1"></i>HIPAA compliant • <i
+                                class="fas fa-times mr-1"></i>Unsubscribe anytime • <i
+                                class="fas fa-envelope mr-1"></i>No spam guarantee
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual Blog Post Modal/Section (Hidden by default) -->
+    <section id="blogPostModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden overflow-y-auto">
+        <div class="min-h-screen py-8 px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="glass-strong rounded-3xl overflow-hidden">
+                    <!-- Modal Header -->
+                    <div class="bg-gradient-to-r from-primary-600 to-secondary-600 p-6 text-white">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-2xl font-playfair font-bold">Blog Article</h2>
+                            <button onclick="closeBlogPost()" class="text-white hover:text-gray-200 text-2xl">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Content -->
+                    <div class="p-8" id="blogPostContent">
+                        <!-- Content will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <!-- Clinic Information -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6" data-aos="fade-up">
+                        <div
+                            class="icon-lg gradient-primary rounded-full flex items-center justify-center text-white shadow-lg floating-element">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-playfair font-bold text-gradient-primary">TinyTeeth</h3>
+                            <p class="text-gray-400 text-body">Expert Pediatric Dental Blog</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md leading-relaxed text-body" data-aos="fade-up"
+                        data-aos-delay="100">
+                        Your trusted source for evidence-based pediatric dental information. Expert insights, research
+                        updates, and practical advice from Dr. Vruushali Patil and the TinyTeeth team.
+                    </p>
+                    <div class="flex space-x-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#"
+                            class="icon-md bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-all hover:scale-110 neon-glow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="icon-md bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-all hover:scale-110 neon-glow">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="icon-md bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-all hover:scale-110 neon-glow">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#"
+                            class="icon-md bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-all hover:scale-110 neon-glow"
+                            onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-playfair font-bold mb-6 text-primary-400">Blog Categories</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors text-body hover:translate-x-2 inline-block"
+                                onclick="filterByCategory('preventive')">Preventive Care</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors text-body hover:translate-x-2 inline-block"
+                                onclick="filterByCategory('treatment')">Treatment Options</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors text-body hover:translate-x-2 inline-block"
+                                onclick="filterByCategory('nutrition')">Nutrition & Diet</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors text-body hover:translate-x-2 inline-block"
+                                onclick="filterByCategory('behavioral')">Behavioral Management</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors text-body hover:translate-x-2 inline-block"
+                                onclick="filterByCategory('orthodontics')">Orthodontics</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-white transition-colors text-body hover:translate-x-2 inline-block"
+                                onclick="filterByCategory('emergency')">Emergency Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h4 class="text-xl font-playfair font-bold mb-6 text-primary-400">Contact Information</h4>
+                    <div class="space-y-4 text-gray-300">
+                        <div class="flex items-start space-x-3 hover-lift">
+                            <i class="fas fa-map-marker-alt text-primary-400 mt-1 icon-sm"></i>
+                            <div class="text-caption">
+                                <p>TinyTeeth Pediatric Dental Clinic</p>
+                                <p>Gangapur Road, Nashik 422013</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 hover-lift">
+                            <i class="fas fa-phone text-primary-400 icon-sm"></i>
+                            <p class="text-caption"><a href="tel:+918626070298" class="hover:text-white">+91
+                                    8626070298</a></p>
+                        </div>
+                        <div class="flex items-center space-x-3 hover-lift">
+                            <i class="fas fa-envelope text-primary-400 icon-sm"></i>
+                            <p class="text-caption"><a href="mailto:vrushalipatil82@gmail.com"
+                                    class="hover:text-white">vrushalipatil82@gmail.com</a></p>
+                        </div>
+                        <div class="flex items-center space-x-3 hover-lift">
+                            <i class="fas fa-clock text-primary-400 icon-sm"></i>
+                            <p class="text-caption">Mon-Sat: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 text-center" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-caption">
+                        © 2025 TinyTeeth Pediatric Dental Clinic. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-caption text-gray-400">
+                        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 btn-primary p-4 rounded-full shadow-premium opacity-0 invisible transition-all duration-300 z-50 neon-glow">
+        <i class="fas fa-chevron-up text-xl"></i>
+    </button>
+
+    <!-- Enhanced JavaScript -->
+    <script>
+        // Initialize AOS Animation Library
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+            mobileMenuBtn.style.transform = mobileMenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+
+        // Enhanced Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > 100) {
+                navbar.classList.add('shadow-premium');
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.classList.remove('shadow-premium');
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+
+            // Update reading progress
+            updateReadingProgress();
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Reading Progress Bar
+        function updateReadingProgress() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('readingProgress').style.width = scrolled + '%';
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                    mobileMenuBtn.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Blog Search Functionality
+        function performSearch() {
+            const searchTerm = document.getElementById('blogSearch').value.toLowerCase();
+            if (searchTerm.trim() === '') {
+                showNotification('Please enter a search term', 'warning');
+                return;
+            }
+
+            // Simulate search functionality
+            showNotification(`Searching for "${searchTerm}"... Found 12 related articles!`, 'success');
+
+            // In a real implementation, this would filter the blog posts
+            highlightSearchResults(searchTerm);
+        }
+
+        function highlightSearchResults(term) {
+            // Simulate highlighting search results
+            const blogPosts = document.querySelectorAll('#blogPostsList article');
+            blogPosts.forEach(post => {
+                const title = post.querySelector('h3');
+                const content = post.querySelector('p');
+
+                if (title.textContent.toLowerCase().includes(term) ||
+                    content.textContent.toLowerCase().includes(term)) {
+                    post.style.border = '2px solid #3B82F6';
+                    post.style.backgroundColor = '#EFF6FF';
+                }
+            });
+
+            // Remove highlights after 3 seconds
+            setTimeout(() => {
+                blogPosts.forEach(post => {
+                    post.style.border = '';
+                    post.style.backgroundColor = '';
+                });
+            }, 3000);
+        }
+
+        // Category Filter Functionality
+        function filterByCategory(category) {
+            showNotification(`Filtering articles by "${category}" category...`, 'info');
+
+            // Simulate category filtering
+            const blogPosts = document.querySelectorAll('#blogPostsList article');
+            blogPosts.forEach((post, index) => {
+                post.style.opacity = '0.3';
+                setTimeout(() => {
+                    post.style.opacity = '1';
+                }, index * 100);
+            });
+        }
+
+        // Load More Posts
+        function loadMorePosts() {
+            const loadBtn = event.target;
+            const originalText = loadBtn.innerHTML;
+
+            loadBtn.innerHTML = '<div class="loading-spinner inline-block mr-2"></div>Loading...';
+            loadBtn.disabled = true;
+
+            setTimeout(() => {
+                showNotification('3 new articles loaded successfully!', 'success');
+                loadBtn.innerHTML = originalText;
+                loadBtn.disabled = false;
+            }, 2000);
+        }
+
+        // Blog Post Modal Functions
+        function openBlogPost(postId) {
+            const modal = document.getElementById('blogPostModal');
+            const content = document.getElementById('blogPostContent');
+
+            // Sample blog post content
+            const blogPosts = {
+                'early-childhood-caries-2025': {
+                    title: 'Revolutionary Approaches to Early Childhood Caries Prevention: Evidence-Based Strategies for 2025',
+                    category: 'Preventive Care',
+                    date: 'December 20, 2024',
+                    readTime: '8 min read',
+                    content: `
+                        <div class="blog-content">
+                            <h2>Introduction</h2>
+                            <p>Early childhood caries (ECC) remains one of the most common chronic diseases affecting children worldwide. Recent advances in preventive dentistry have opened new avenues for more effective prevention strategies that go beyond traditional approaches.</p>
+                            
+                            <h2>Latest Research Findings</h2>
+                            <p>Recent clinical studies have shown that a multi-faceted approach combining fluoride therapy, dietary counseling, and behavioral interventions can reduce caries incidence by up to 70% in high-risk children.</p>
+                            
+                            <h3>Key Prevention Strategies</h3>
+                            <ul>
+                                <li><strong>Silver Diamine Fluoride (SDF):</strong> Revolutionary treatment that can arrest caries progression</li>
+                                <li><strong>Probiotic Therapy:</strong> Beneficial bacteria that help maintain oral health</li>
+                                <li><strong>Xylitol Interventions:</strong> Natural sugar substitute that inhibits bacterial growth</li>
+                                <li><strong>Fluoride Varnish Applications:</strong> Professional treatments every 3-6 months</li>
+                            </ul>
+                            
+                            <h2>Implementation Guidelines</h2>
+                            <p>For optimal results, these strategies should be implemented as part of a comprehensive oral health program starting from the eruption of the first tooth.</p>
+                            
+                            <h3>Age-Specific Recommendations</h3>
+                            <p><strong>0-12 months:</strong> Focus on oral hygiene education for parents and fluoride supplementation as needed.</p>
+                            <p><strong>12-36 months:</strong> Introduction of fluoride toothpaste and regular dental visits.</p>
+                            <p><strong>3-5 years:</strong> Comprehensive preventive program including sealants and dietary counseling.</p>
+                            
+                            <h2>Conclusion</h2>
+                            <p>The future of caries prevention lies in personalized, evidence-based approaches that consider individual risk factors and family circumstances. By implementing these revolutionary strategies, we can significantly improve oral health outcomes for children.</p>
+                        </div>
+                    `
+                },
+                'sedation-protocols-2024': {
+                    title: 'Advanced Pediatric Sedation Protocols: Safety First Approach',
+                    category: 'Sedation Dentistry',
+                    date: 'December 18, 2024',
+                    readTime: '10 min read',
+                    content: `
+                        <div class="blog-content">
+                            <h2>Modern Sedation in Pediatric Dentistry</h2>
+                            <p>Pediatric sedation dentistry has evolved significantly with new protocols that prioritize safety while ensuring optimal treatment outcomes for anxious children.</p>
+                            
+                            <h2>Types of Sedation</h2>
+                            <h3>Nitrous Oxide (Laughing Gas)</h3>
+                            <p>The gold standard for mild to moderate anxiety management in children. Safe, effective, and allows for quick recovery.</p>
+                            
+                            <h3>Oral Conscious Sedation</h3>
+                            <p>Medication administered orally to achieve deeper relaxation for more complex procedures.</p>
+                            
+                            <h3>IV Sedation</h3>
+                            <p>Reserved for extensive treatments or children with severe anxiety, administered by certified professionals.</p>
+                            
+                            <h2>Safety Protocols</h2>
+                            <ul>
+                                <li>Comprehensive pre-sedation evaluation</li>
+                                <li>Continuous monitoring of vital signs</li>
+                                <li>Emergency preparedness protocols</li>
+                                <li>Post-sedation recovery guidelines</li>
+                            </ul>
+                            
+                            <h2>Patient Selection Criteria</h2>
+                            <p>Not all children are candidates for sedation. Careful evaluation of medical history, anxiety levels, and treatment complexity is essential.</p>
+                        </div>
+                    `
+                }
+            };
+
+            const post = blogPosts[postId] || {
+                title: 'Blog Post Not Found',
+                content: '<p>This blog post is currently being updated. Please check back soon!</p>'
+            };
+
+            content.innerHTML = `
+                <div class="mb-6">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="bg-primary-100 text-primary-800 text-sm px-3 py-1 rounded-full">${post.category || 'General'}</span>
+                        <span class="text-gray-500 text-sm">${post.date || 'Recent'}</span>
+                        <span class="text-gray-500 text-sm">• ${post.readTime || '5 min read'}</span>
+                    </div>
+                    <h1 class="text-3xl font-playfair font-bold text-primary-dark mb-4">${post.title}</h1>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="icon-md gradient-primary rounded-full flex items-center justify-center text-white text-lg">VP</div>
+                        <div>
+                            <div class="font-semibold text-primary-dark">Dr. Vruushali Patil</div>
+                            <div class="text-sm text-gray-600">MDS Pediatric Dentistry</div>
+                        </div>
+                    </div>
+                </div>
+                ${post.content}
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <div class="flex justify-between items-center">
+                        <button class="btn-secondary px-6 py-3 rounded-xl font-semibold text-white" onclick="scrollToBooking()">
+                            <i class="fas fa-calendar-check mr-2"></i>Book Consultation
+                        </button>
+                        <button class="btn-primary px-6 py-3 rounded-xl font-semibold text-white" onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp mr-2"></i>Discuss on WhatsApp
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeBlogPost() {
+            const modal = document.getElementById('blogPostModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Newsletter Subscription
+        function subscribeNewsletter(source = 'main') {
+            const emailInput = source === 'sidebar' ?
+                document.getElementById('sidebarEmail') :
+                document.getElementById('newsletterMainEmail');
+
+            const email = emailInput.value.trim();
+
+            if (!email) {
+                showNotification('Please enter a valid email address', 'warning');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showNotification('Please enter a valid email format', 'warning');
+                return;
+            }
+
+            // Simulate subscription
+            showNotification('🎉 Successfully subscribed! Welcome to our expert newsletter community.', 'success');
+            emailInput.value = '';
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Utility Functions
+        function scrollToBooking() {
+            window.location.href = 'index.html#contact';
+        }
+
+        function openWhatsApp() {
+            const phoneNumber = '918626070298';
+            const message = `Hello Dr. Vruushali! I read your blog article and would like to schedule a consultation for my child. Could you please provide more information about your services?`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Enhanced Notification System
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-24 right-6 z-50 p-4 rounded-xl shadow-premium max-w-sm transition-all duration-500 transform translate-x-full`;
+
+            const colors = {
+                success: 'bg-secondary-500 text-white',
+                error: 'bg-coral-500 text-white',
+                warning: 'bg-accent-500 text-white',
+                info: 'bg-primary-500 text-white'
+            };
+
+            notification.className += ` ${colors[type]}`;
+            notification.innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <div class="flex-1">
+                        <p class="text-sm font-medium">${message}</p>
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" class="text-white hover:text-gray-200">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                }, 500);
+            }, 5000);
+        }
+
+        // Enhanced Button Interactions
+        document.querySelectorAll('.btn-primary, .btn-secondary, .btn-accent').forEach(button => {
+            button.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-3px) scale(1.02)';
+            });
+            button.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Search on Enter key
+        document.getElementById('blogSearch').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeBlogPost();
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+                mobileMenuBtn.style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Initialize Enhanced Features
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🦷 TinyTeeth Blog Page Loaded Successfully! ✨');
+
+            // Add floating animation to icons
+            document.querySelectorAll('.floating-element').forEach(element => {
+                element.style.animation = 'float 6s ease-in-out infinite';
+            });
+
+            // Initialize neon glow effects
+            document.querySelectorAll('.neon-glow').forEach(element => {
+                element.addEventListener('mouseenter', function () {
+                    this.style.boxShadow = '0 0 30px rgba(37, 99, 235, 0.8)';
+                });
+                element.addEventListener('mouseleave', function () {
+                    this.style.boxShadow = '0 0 20px rgba(37, 99, 235, 0.5)';
+                });
+            });
+        });
+
+        // Performance Optimization
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeInUp');
+                }
+            });
+        });
+
+        document.querySelectorAll('.card-premium').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>
