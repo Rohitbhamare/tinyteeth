@@ -218,7 +218,320 @@
             }
         }
     </script>
+    <style>
+        /* Fix for mobile responsiveness and white space issues */
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
 
+        /* Enhanced Mobile Navigation - Reduced Size */
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+            transition: all 0.3s ease;
+            padding: 0.75rem 0;
+            /* Reduced padding */
+        }
+
+        /* Mobile navbar adjustments */
+        @media (max-width: 1024px) {
+            .nav-glass {
+                padding: 0.5rem 0;
+                /* Even smaller on mobile */
+            }
+
+            /* Reduce logo and brand size on mobile */
+            .nav-glass .icon-md {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .nav-glass h1 {
+                font-size: 1.5rem;
+            }
+
+            .nav-glass p {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Fix container and padding issues */
+        .container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .container-padding {
+            padding: 0 1rem;
+        }
+
+        /* Enhanced Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+
+            .container-padding {
+                padding: 0 0.75rem;
+            }
+
+            /* Fix hero section mobile layout */
+            .hero-form {
+                max-width: 100%;
+                margin-top: 2rem;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            /* Reduce section padding on mobile */
+            .section-padding {
+                padding: 3rem 0;
+            }
+
+            /* Fix grid layouts on mobile */
+            .grid {
+                gap: 1rem;
+            }
+
+            /* Ensure cards don't overflow */
+            .card-premium {
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            /* Fix text sizes on mobile */
+            .text-5xl {
+                font-size: 2.5rem;
+            }
+
+            .text-7xl {
+                font-size: 3rem;
+            }
+
+            .text-4xl {
+                font-size: 2rem;
+            }
+
+            /* Fix button sizes on mobile */
+            .btn-primary,
+            .btn-secondary,
+            .btn-accent {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.875rem;
+            }
+
+            /* Fix form elements on mobile */
+            .form-glass {
+                font-size: 0.875rem;
+                padding: 0.75rem;
+            }
+
+            /* Fix mobile menu */
+            #mobileMenu {
+                margin-left: -1rem;
+                margin-right: -1rem;
+                width: calc(100% + 2rem);
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+
+            .container-padding {
+                padding: 0 0.5rem;
+            }
+
+            /* Further reduce text sizes */
+            .text-5xl,
+            .text-7xl {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+
+            .text-4xl {
+                font-size: 1.75rem;
+            }
+
+            .text-3xl {
+                font-size: 1.5rem;
+            }
+
+            .text-2xl {
+                font-size: 1.25rem;
+            }
+
+            /* Stack hero content vertically on very small screens */
+            .hero-content {
+                text-align: center;
+            }
+
+            /* Reduce icon sizes on mobile */
+            .icon-xl {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+
+            .icon-lg {
+                width: 48px;
+                height: 48px;
+                font-size: 20px;
+            }
+
+            /* Fix footer on mobile */
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Fix specific layout issues */
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        /* Ensure no horizontal scroll */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Fix floating elements positioning on mobile */
+        @media (max-width: 768px) {
+            .floating-element {
+                display: none;
+                /* Hide floating elements on mobile to prevent overflow */
+            }
+
+            /* Adjust background elements */
+            .absolute {
+                position: relative;
+                /* Change to relative on mobile */
+            }
+        }
+
+        /* Fix navbar brand section */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        /* Mobile menu improvements */
+        @media (max-width: 1024px) {
+            .mobile-menu-container {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(25px);
+                border-radius: 0 0 1rem 1rem;
+                margin: 0 1rem;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        /* Fix hero section grid on mobile */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content {
+                order: 1;
+            }
+
+            .hero-form-container {
+                order: 2;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+
+        /* Compact form mobile adjustments */
+        .compact-form {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .compact-form .form-glass {
+                padding: 0.625rem 0.875rem;
+                font-size: 0.8125rem;
+            }
+
+            .compact-form .btn-primary {
+                padding: 0.625rem 1.25rem;
+                font-size: 0.8125rem;
+            }
+        }
+
+        /* Fix service cards grid */
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Fix testimonials grid */
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Fix blog cards grid */
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Ensure images don't overflow */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Fix contact form on mobile */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-form {
+                order: 1;
+            }
+
+            .contact-info {
+                order: 2;
+            }
+        }
+    </style>
     <style>
         /* Enhanced Icon Sizes */
         .icon-sm {
@@ -657,50 +970,52 @@
 
 <body class="font-inter bg-gray-50 text-gray-900 overflow-x-hidden">
     <!-- Enhanced Navigation -->
-    <nav class="nav-glass fixed top-0 w-full z-50 py-4 px-6 transition-all duration-300" id="navbar">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-4" data-aos="fade-right">
+    <!-- Enhanced Navigation with Mobile Fixes -->
+    <nav class="nav-glass fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto flex justify-between items-center px-4 lg:px-6">
+            <div class="navbar-brand" data-aos="fade-right">
                 <div
                     class="icon-md gradient-primary rounded-full flex items-center justify-center text-white font-bold shadow-lg floating-element">
                     <i class="fas fa-tooth"></i>
                 </div>
                 <div>
-                    <h1 class="text-2xl font-playfair font-bold text-gradient-primary">TinyTeeth</h1>
-                    <p class="text-small text-gray-600 font-medium">Pediatric Dental Excellence</p>
+                    <h1 class="text-xl lg:text-2xl font-playfair font-bold text-gradient-primary">TinyTeeth</h1>
+                    <p class="text-xs lg:text-small text-gray-600 font-medium">Pediatric Dental Excellence</p>
                 </div>
             </div>
 
             <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center space-x-8" data-aos="fade-left">
+            <div class="hidden lg:flex items-center space-x-6 xl:space-x-8" data-aos="fade-left">
                 <a href="#home"
-                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Home</a>
+                    class="text-sm xl:text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Home</a>
                 <a href="#about"
-                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">About</a>
+                    class="text-sm xl:text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">About</a>
                 <a href="#services"
-                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Services</a>
+                    class="text-sm xl:text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Services</a>
                 <a href="#specialties"
-                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Specialties</a>
+                    class="text-sm xl:text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Specialties</a>
                 <a href="#blog"
-                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105"
+                    class="text-sm xl:text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105"
                     onclick="openBlogPage()">Blog</a>
                 <a href="#contact"
-                    class="text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Contact</a>
-                <button class="btn-primary text-white px-6 py-3 rounded-full font-semibold text-body neon-glow"
+                    class="text-sm xl:text-body text-gray-700 hover:text-primary-600 font-medium transition-all duration-300 hover:scale-105">Contact</a>
+                <button
+                    class="btn-primary text-white px-4 xl:px-6 py-2 xl:py-3 rounded-full font-semibold text-sm xl:text-body neon-glow"
                     onclick="scrollToBooking()">
-                    <i class="fas fa-calendar-check mr-2"></i>Book Consultation
+                    <i class="fas fa-calendar-check mr-1 xl:mr-2"></i>Book Now
                 </button>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="lg:hidden text-2xl text-gray-700 transition-transform duration-300 hover:scale-110"
+            <button class="lg:hidden text-xl text-gray-700 transition-transform duration-300 hover:scale-110 p-2"
                 id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div class="lg:hidden hidden glass rounded-2xl mt-4 p-6 animate-fadeInUp" id="mobileMenu">
-            <div class="flex flex-col space-y-4">
+        <div class="lg:hidden hidden mobile-menu-container animate-fadeInUp" id="mobileMenu">
+            <div class="flex flex-col space-y-3 p-4">
                 <a href="#home"
                     class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">Home</a>
                 <a href="#about"
@@ -714,7 +1029,7 @@
                     onclick="openBlogPage()">Blog</a>
                 <a href="#contact"
                     class="text-body text-gray-700 hover:text-primary-600 font-medium transition-colors py-2">Contact</a>
-                <button class="btn-primary text-white px-6 py-3 rounded-full font-semibold w-full mt-4 text-body"
+                <button class="btn-primary text-white px-6 py-3 rounded-full font-semibold w-full mt-3 text-body"
                     onclick="scrollToBooking()">
                     <i class="fas fa-calendar-check mr-2"></i>Book Consultation
                 </button>
@@ -722,6 +1037,168 @@
         </div>
     </nav>
 
+    <!-- Enhanced Hero Section with Mobile Fixes -->
+    <section id="home"
+        class="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+        style="background-image: linear-gradient(rgba(248, 250, 252, 0.9), rgba(241, 245, 249, 0.9)), url('https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center;">
+
+        <div class="container mx-auto relative z-10">
+            <div class="hero-grid grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+                <!-- Left Side - Hero Content (2/3 width) -->
+                <div class="hero-content lg:col-span-2 text-center lg:text-left">
+                    <!-- Professional Badge -->
+                    <div class="inline-flex items-center badge-primary mb-4 lg:mb-6" data-aos="fade-up">
+                        <i class="fas fa-award mr-2 icon-sm"></i>
+                        Premier Pediatric Dental Care
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-playfair font-bold mb-4 lg:mb-6 text-primary-dark leading-tight"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <span class="block animate-slideInLeft">TinyTeeth</span>
+                        <span
+                            class="text-xl sm:text-2xl lg:text-3xl xl:text-5xl text-gray-700 animate-slideInRight">Pediatric
+                            Dental Clinic</span>
+                    </h1>
+
+                    <!-- Enhanced Subheading -->
+                    <div class="text-lg lg:text-xl xl:text-2xl mb-6 lg:mb-8 text-gray-700 font-medium"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <p class="mb-2 lg:mb-3">Creating Healthy Smiles with Scientific Excellence</p>
+                        <p class="text-base lg:text-lg xl:text-xl text-gray-600">Where Advanced Pediatric Dentistry
+                            Meets
+                            Compassionate Care</p>
+                        <p class="text-sm lg:text-base xl:text-lg text-primary-600 font-semibold mt-2">✨ Trusted by
+                            2000+
+                            Families in Nashik ✨</p>
+                    </div>
+
+                    <!-- Enhanced Doctor Credentials -->
+                    <div class="glass-strong rounded-2xl p-4 lg:p-6 mb-6 lg:mb-8 text-gray-800" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="flex items-center justify-center lg:justify-start mb-3 lg:mb-4">
+                            <div
+                                class="icon-md lg:icon-lg bg-primary-100 rounded-full flex items-center justify-center text-primary-600 mr-3 lg:mr-4 neon-glow">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="text-lg lg:text-xl font-bold text-primary-dark">Dr. Vruushali Patil</h3>
+                                <p class="text-primary-600 text-sm lg:text-body">MDS Pediatric Dentistry</p>
+                                <p class="text-xs lg:text-sm text-gray-600">Certified Sedation Specialist</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 lg:gap-4 text-center text-xs lg:text-caption">
+                            <div class="bg-primary-50 rounded-lg p-2 lg:p-3 hover-lift">
+                                <div class="font-bold text-sm lg:text-lg text-primary-dark">15+</div>
+                                <div class="text-primary-600">Years Experience</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2 lg:p-3 hover-lift">
+                                <div class="font-bold text-sm lg:text-lg text-secondary-dark">2000+</div>
+                                <div class="text-secondary-600">Happy Patients</div>
+                            </div>
+                            <div class="bg-accent-50 rounded-lg p-2 lg:p-3 hover-lift">
+                                <div class="font-bold text-sm lg:text-lg text-accent-dark">98%</div>
+                                <div class="text-accent-600">Success Rate</div>
+                            </div>
+                            <div class="bg-coral-50 rounded-lg p-2 lg:p-3 hover-lift">
+                                <div class="font-bold text-sm lg:text-lg text-coral-600">24/7</div>
+                                <div class="text-coral-600">Emergency Care</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <button
+                            class="btn-primary text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold text-sm lg:text-body"
+                            onclick="scrollToBooking()">
+                            <i class="fas fa-stethoscope mr-2"></i>Schedule Consultation
+                        </button>
+                        <button
+                            class="glass text-gray-800 px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold text-sm lg:text-body border-2 border-primary-200 hover:bg-primary-50 transition-all"
+                            onclick="openVirtualTour()">
+                            <i class="fas fa-play mr-2"></i>Virtual Tour
+                        </button>
+                        <button
+                            class="btn-secondary text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold text-sm lg:text-body"
+                            onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Side - Compact Appointment Form (1/3 width) -->
+                <div class="hero-form-container" data-aos="fade-left" data-aos-delay="500">
+                    <div
+                        class="glass-strong rounded-3xl p-4 lg:p-6 shadow-premium compact-form hero-form w-full max-w-md mx-auto lg:max-w-none">
+                        <div class="text-center mb-3 lg:mb-4">
+                            <h3 class="text-lg lg:text-xl font-playfair font-bold text-primary-dark mb-1 lg:mb-2">Quick
+                                Booking</h3>
+                            <p class="text-gray-600 text-xs lg:text-caption">Schedule your consultation</p>
+                        </div>
+                        <form class="space-y-2 lg:space-y-3" id="heroForm">
+                            <div>
+                                <input type="text" required
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none text-xs lg:text-sm"
+                                    placeholder="Child's Name *">
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <select required
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 focus:outline-none text-xs lg:text-sm">
+                                    <option value="">Age</option>
+                                    <option value="0-2">0-2 years</option>
+                                    <option value="3-5">3-5 years</option>
+                                    <option value="6-8">6-8 years</option>
+                                    <option value="9-12">9-12 years</option>
+                                    <option value="13-17">13-17 years</option>
+                                </select>
+                                <input type="text" required
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none text-xs lg:text-sm"
+                                    placeholder="Parent Name *">
+                            </div>
+                            <div>
+                                <input type="tel" required
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none text-xs lg:text-sm"
+                                    placeholder="Phone Number *">
+                            </div>
+                            <div>
+                                <select required
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 focus:outline-none text-xs lg:text-sm">
+                                    <option value="">Service Needed *</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="cleaning">Dental Cleaning</option>
+                                    <option value="filling">Dental Filling</option>
+                                    <option value="orthodontics">Orthodontic Consultation</option>
+                                    <option value="sedation">Sedation Dentistry</option>
+                                    <option value="emergency">Emergency Care</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <input type="date"
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 focus:outline-none text-xs lg:text-sm">
+                                <select
+                                    class="form-glass w-full px-3 py-2 rounded-xl text-gray-800 focus:outline-none text-xs lg:text-sm">
+                                    <option value="">Time</option>
+                                    <option value="morning">Morning</option>
+                                    <option value="afternoon">Afternoon</option>
+                                    <option value="evening">Evening</option>
+                                </select>
+                            </div>
+                            <button type="submit"
+                                class="btn-primary w-full py-2 lg:py-3 rounded-xl font-bold text-xs lg:text-sm text-white">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Now
+                            </button>
+                            <div class="text-center text-gray-600 text-xs">
+                                <p><i class="fas fa-lock mr-1"></i> Secure & Confidential</p>
+                                <p><i class="fas fa-phone mr-1"></i> We'll call within 2 hours</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Enhanced Hero Section with Compact Form -->
     <section id="home"
         class="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
